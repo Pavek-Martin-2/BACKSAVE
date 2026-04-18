@@ -1,0 +1,118 @@
+18.4.2026
+tohle je jiz ctvrta verze programu za zalohovani hernich pozic pro Dos-Box emulator
+predchozi verze 3, byla napsana v GW-Basicu 3.23 a pouzivala pro pakovani
+komprimacnim programem ARJ davkovy soubor ktery napred vygenerovala a pak ho spustila
+v nove verzi se me podarilo toto adstanit a program se kompiluje do samospustitelneho
+EXE souboru a pouziva vestaveny prikaz SHELL pro spousteni vseho co je potreba 
+a to primo programem samotnim a ne oklikou pres davkovy soubor jako to bylo minule
+co se bohuzel nepdarilo vylepsit a to me docela mrzi je informace o aktualnim
+adresari, na Linuxu napriklad znama jako prikaz PWD, v PowerShellu jako Get-Location
+atd. zamozdrejme ze zde nic takoveho neni a muselo se to vyresit oklikou pres prikaz
+SHELL "CD > C:\PWD.TXT" kam se ulozi aktualni pracovni adresar do ktereho je momentalne 
+prepnuto a naslednim nacteni tohoto vygenerovaneho souboru v Qbasic 4.50 a ulozeni
+nacteneho radku do promenne pro jeji dalsi pouziti, dokonce ani umela inteligence
+kde jsem byl jak ja rikam na "vyzvedach" neporadila nic a tento muj trik ktery jsem
+uz asi pred rokem nekde pri jine prilezitosti publikoval navrhobala jako nejlepsi mozne
+a nejspolehlivejsi reseni, doslo akorat ke zmene v tom ze v minule verzi jsem pouzil
+prikaz SHELL "DIR > C:\PWD.TXT" misto "CD > ..." takze se zbytecne ukladalo do souboru
+vice informaci nez bylo nezbytne nutne a take viceradkovy vypis adresare coz trva dele
+program nekdy spadnul (vetsinou ne) ale tato novejsi verze stim problem nema, takze preci
+jenom alespon nejake zlepseni
+
+tentokrate jsou screenshoty v adreasari SRC, takze doporucuju se podivat na obrazkovy navod
+kde je krok za krokem popsano/ukazano jak se stim da pracovat, program doporucuju spoustet
+davkou EDIT.BAT ktera zjisti zalohovani souboru pred editaci aby se pripadne dalo pri nejake
+chybe vratit k predchzimu
+program jsem mel ve svem Dos-Box emulatoru v adresari "C:\BACKSAVE" takze pokud budete mit jinak
+tak je potreba v Qbasicu upravit cesty podle toho aby nasel potrebne knihovny a program
+mohl spravne prevect do samospustitelneho souboru EXE toto ukazeju konktretene obrazek
+"04_navod.jpg" takze zde pripadne je nutno opravit !
+vsechny hry mam v DosBox emulatoru v ceste "C:\HRY" takze pokud mate treba "C:\GAMES\"
+tak je potreb upravit podle vasi konkretni situace
+je take prilozen souborovy manager Dos Navigator coz bylo sveho casu to nejlesi co clovek
+mohl mit a ten ma vestaveny editor textovych souboru a umoznuje pouzit funkci vyhledej a nahrad
+a to vsechny vyskyty v danem textu take jsem pridal do SCR\ par screeshotu jak se to da udelat
+paklize je potreba takze pripadne prohlednou adresar "SCR\DN_EDIT\"
+u sebe v PC mam adresar "C:\UTILS\" kam si kopiruju vsechny potrebene programky-utilitky
+a mam v DosBoxu odkaz na tento adresar v systemove prommene PATH, viz. opet screenhoty
+a take prilozeny soubor konfigurace DosBox emulatoru "dosbox-0.74-3.conf.txt"
+pokud teda nechcte puuzit treba konzoli Mister z FPGA emulatorem pocitace 486 apod.
+jinak samozdrejme i zde by se dal muj program pouzit a jestli umite treba v jazyku
+C# pod MS-Dosem, tak si to prepiste do Cecka a muze to poslouzit treba jenom jako
+pripadna inspirace (ja z Cckem bojuju i ve verzi 11 takze ...)
+
+jeste se zastavim u obrazku "SCR\06_navod.jpg" tady je dobre, samozdrejme by to fungovalo i
+stou prilozenou knihovnou ale proc ! takze jeste pred tim nez se klikne na "Make EXE" a nebo na
+"Make EXE and Exit" zvolit ve slopecku Produce: polozku "Stand-Alone EXE File" bude to znamenat
+ze vygenerovany samospustitenny EXE soubor nebude potrebovat "vydet" jeste na nejakou knihovnu
+"BCOM45.LIB" nebo jestli se nepletu, soubor EXE bude trochu vetsi ale bude pracovat zcela samostatne
+toto je si myslem je hlavne kvuli tomu kdyz by bylo tech souboru hodne tak ze boudou mit vsechny jednu
+nejakou spolecnou knihovnu a tim se vlastne bude setrit misto na disku a asi i pamet pocitace apod.
+takze v tomhle pripade si myslim ze zbytecnost
+
+takze k pouziti, davka EDIT.BAT kopiruje nove zkompilovany soubor BACKSAVE.EXE do adresare
+"C:\UTILS" coz jak uz jsem psal je cesta ktera je obsazena (mimo jinych) v globalni
+systemove promenne PATH to znamena ze soubor BACKSAVE.EXE v adresari "C:\UTILS\"
+bude spustiteny treba i v prave aktualnim adresari napr. "C:\HRY\DOOM\" a o to samozdrejme
+jde, zjisti si aktualni cestu tedy napr. C:\HRY\DOOM\ a porovna ji ze svoji databazi (promena typu
+pole AH$() a kni podle stejneho cisla indexu pridruzene druhe prommene stejneho tipu SC$()
+paklize program po prohlednuti vsech radku najde shodu a aktualnim adresarem (tedy hrou)
+pouziji informaci z SC$() pro zapakovani pomoci archivatoru ARJ.EXE (je prilozen)
+na tuto konkretni hru, samozdejme u kazde hry je to trochu jinak a jinak se ukladaji SAVE
+pozice do ruznych nazvu souboru atd. u jmenovane hry DOOM jsou to treba soubory "doomsav?.dsg"
+kde znak "?" je nahadna za jeden libovolny znak takze bude pakovat vse co mam nazev
+"doomsav0.dsg" "doomsav1.dsg" "doomsav2.dsg" atd. rika se tomu vyber pomoci masky
+(urcite je to popsano na internetu) takze doporucuji vyhledat a nastudovat
+jeste treba znak hvezdicka tedy "*" ja nahrada za cely retezec takze zase priklad na "*"
+soubor "save.*" bude nazev souboru "save" pak je tecka jako rozdelovat a pripna je libovolna
+takze by pakoval vsechny soubory ktere budou mit tento nazev a jakoukoliv priponu 
+(a to i delku pripony)
+kde je v SC$() hodota "NONE" tak to je tak ze se nezjistilo jak se ukladaji save soubory
+nekde se to pak podarilo zjisti pozdeji a nekde vubec takze tam "NONE" uz zustalo
+kazdopadne "NONE" zde funguje jako tzv. vyhrazene slova a program paklize na nej narazi
+v souvislosti z informaci co pakovat ta vypis hlasku "Adresar v seznamu nalezen ale neni definovano"
+a ukonci se bez cehokoliv dalsiho, pak je zde jeste posledni moznost ze program nezjisti aktualni
+adresar vubec napriklad pokud byste spustili prikaz "backsave" napr. v adresari "C:\"
+kde zadna hra neni, tak v takovem pripade napise "Adresar nenalezen v seznamu" a nasleduje
+prikaz SYSTEM pro ukonceni programu a navrat do Dosu
+na zacatku programu je prommena POCET, momentalne nastavena na pocet=110 toto slozi jako dimenzace
+promenne AH$() a SC$() driv se to delalo takto zadna funce $pocet = $AH.Length apod. jako je dneska
+v modernim PowerShellu nebyla vsechno se muselo delat rucne a hlidat spravnou hodnotu
+myslim ze v tomhletom smeru se vyvoj ubyral opravdu spravnym a logickim smerem a toto se uz dnes
+delat nemusi a nepredstavuje to zadenej problem, jinak receno radky "DIM AH$(pocet)"
+predem dimenzujou promennu AH$() a SC$() (obe jsou type array, jak by se dneska reklo )
+a vydite za na zacatku je AH$(1) a na konci nejakej AH$(108) z posledni hrou
+takze hodnota POCET=110 je dostatecna, kdyby bylo nastaveny POCET=200 v teto situaci
+tak by to bylo zbytecne moc a kdyby bylo naopak napr. POCET=100 tak by to bylo malo 
+a cyklus "FOR X = 1 TO pocet" by neprojel vsechny radky z hrama ktery jsou nadefinovany
+takze tak plus 5, plus 10, jednu hru jsem z pocitace smazal bylo to:
+REM AH$(71) = "C:\HRY\WAR\": SC$(71) = "*.sav"
+a vydite REM na zacatku to znamena ze je radek zakomentovanej, nebude se spracovavat
+je tam ale jako kdyby tam nebyl, tak jak je to obvykle vsude na Linuxu je treba ze se pise
+pred radek znak hash tedy "#" v C++ je to sekvence znaku "//" tady je to REM a vyznam je stejnej
+proste ignoruj tento radek, pokud by sem hru casem znovu vrati tak jenom smazu REM a radek
+funguje zase dal
+
+prilozeny soubor pakovace "ARJ.EXE" samozdejme nekam nakopirovat
+take kde je cesta PATH aby byl pro system vydelnej odevsad, u sebe ho mam v adesari
+"C:\PACK" tery mam specialne vyhrazeni jenom na archivacni programy, utility chcete-li
+a totez vlaste plati take pro "SLEEP.EXE" ten take musi byt "vyden" odevsad jinak by to
+hazelo chyby i kdyz v tomhletom pripade uz ne kritickou, k "SLEEP.EXE" je take prilozen
+zdrojovy soubor "SLEEP.BAS" ktery je taktez napsany v Q-Basicu verze 4.50
+kdyz v adresri napisete prikaz "QB" tak ho spustite take a jak uz jsem psal, doporucuju
+to delat pres davkac EDIT.BAT ktery napred i zalohuje pro pripad nejake chyby takze jsou
+starsi soubory BACKSAVE.BAK (BAK jako backup) a BACKSAVE.OLD ten bude vzdy nejstarsi
+tak je to nastaveno v EDIT.BAT
+na obrazku "10_navod.jpg" je videt nahore Adding a dole Testing, takze program ARJ
+pakuje a pak jeste kontroluje co zapakoval
+obrazek SCR\CONF.JPG je screenshot konfiguracniho souboru DosBox emulatoru a 
+obrazek SCR\PATH.JPG ukazuje co se stane kdyz ze v emulatoru spusti prikaz PATH ktery
+vypisuje obsah stejnojmenne systemove promenne takze vsechny polozky ktere jsou oddeleny
+strednikem ukazujou ruzne cesty kde jsou soubory ktere se daji "volat" odkudkoliv
+v souborovem systemu v takovem tom pomyslnem stromu jehoz korenem je adresar "C:\"
+
+nevim co bych jeste napsal, snad jsem na nic duleziteho nezapomel, takze zatim takhle
+vsechno, kdybych si na neco jeste vzpomel tak to doplnim pozdeji
+autor
+
+
