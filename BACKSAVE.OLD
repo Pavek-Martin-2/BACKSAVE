@@ -20,7 +20,7 @@ REM pro pripad ze by byl aktualni adresar "c:\" se nedava dalsi + "\"
 REM PRINT (pwd$)
 KILL "C:\pwd.txt"
 REM ---------------------------------
-pocet = 110
+pocet = 112
 REM zvetsovat hodnotu promenne "pocet" jak budou pribejvat novy radky AH$(n)
 REM promena "pocet" nemusi byt uplne presne muze byt o neco vice
 REM ale nesnim byt mene naz je nutne !
@@ -146,6 +146,8 @@ AH$(105) = "C:\HRY\DOOMJPTR\": SC$(105) = "doomsav?.dsg *.bat"
 AH$(106) = "C:\HRY\HORKELET\": SC$(106) = "SAVE.? *.txt"
 AH$(107) = "C:\HRY\GOBLINS3\": SC$(107) = "*.cfg *.inf"
 AH$(108) = "C:\HRY\GOBLINS2\": SC$(108) = "*.inf"
+AH$(109) = "C:\HRY\NITEMARE\": SC$(109) = "*.sav"
+
 REM ^^^ tady pridavat postupne novy radky jak budou pribejvat novy hry
 REM ------------- konec seznamu adresaru a souboru save ---------------
 FOR X = 1 TO pocet
@@ -200,9 +202,9 @@ REM PRINT cekej$
 SHELL cekej$
 REM vrati zase spatky cykly na 3000 (3000=dosbox.conf tedy auto)
 pomalu$ = "config -set cpu cycles=auto"
+PRINT "archiv je ve formatu DDMMYYHH.arj"
 PRINT pomalu$
 SHELL pomalu$
-PRINT "archiv je ve formatu DDMMYYHH.arj"
 REM PRINT cekej$
 SHELL cekej$
 
