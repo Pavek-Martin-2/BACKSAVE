@@ -1,0 +1,38 @@
+
+tady je to hodne jednoduche a vse potrebne vlastne napovi soubor "backsave.bat" ktery je v tomto adresari
+muzete vnem upravit radek c:\prog\gw323\hry_sav3\gwbasic.exe c:\prog\gw323\hry_sav3\backsave.bas
+podle svoji situace bude odkazovat na interpretr "gw-basicu" a jako prvni parametr se mu da
+absolutni cesta a souboru "backsave.bas" tim je zajisteno ze se interpretr spusti nahraje tento 
+soubor s basicem a rovnou ho i pusti
+je toho hodne spolecneho co bylo popsano ve verzi 4 cili v kratkosti jenom
+pomoci prikazu SHELL "dir > C:\pwd.txt" ulozi soubor "pwd.txt" z aktualni cestou na "c:\"
+"c:\" je zvoleno samozdrejme stoho duvodu ze korenovy adresar existuje vzdycky a vsude
+potom tento soubor otevre - OPEN "C:\pwd.txt" FOR INPUT AS #1 - a nacte hodnotu "PWD" - radek
+INPUT #1,PWD$ tu pak bude porovnavat ze vsema indexama promenny typu pole AH$() a kni pridruzeny
+promenny SC$() a podle nalezeneho nebo pripadne nenalezeneho se pak zachova
+doporucuju precist soubor "povidani.txt" pro verzi 4, je zbytecne znova psat v podstate to same
+tato verze programu nepouziva prikaz "SHELL" nebo "SYSTEM" na spusteni  "arj" ale vygeneruje v
+adresari ze hrou soubor "ASDFGHVB.BAT", nazev byl zvolen zamerne takto aby by co nejvice unikatni
+a nebyl tim padem z nicim v konfliktu a ten pak davka "backsave.bat" spusti provede kompresi
+a nakonec spusteni soubor "ASDFGHVB.BAT" vlatne sam sebe smaze (je v pameti a maze na disku)
+to zajisti radek - PRINT #1, "DELETE ASDFGHVB.BAT" v "backsave.bas" nakonci a posledni radek
+v "backsave.bas" tedy "9999 system" ukonci interpretr gw-basicu a je hotovo a komprimovano a uklizeno
+takle si to mezi sebou predava jeden druhyho :) docela dalo praci to vymyslet aby to vsechno na
+sebe navazovalo
+jeste poznamka ke hre UFO, kterou jsem podrobne resil v navodu k verzi 5
+radek - 1068 AH$(69)="C:\HRY\UFO\" .... i ze vsema deseti adresarema zde jako v jedine verzi funguje
+opravdu nevim tohle je tak trochu zahada, proc zase tady ano a jinde ne ?
+mozna to muze bejt tim ze se prikaz spousti prave pres davkovy soubor a ne volani prokazu "SHELL"
+nebo "SYSTEM" jak je to ve verzi 4 a 5 a tim padem si stim MS-Dos asi lepe rozumi a vestavene
+prikazi "SHELL" a "SYSTEM" nejsou plnohodnotne a maji nejake omezeni kdezdo prikaz v davce ne ?
+nevim cim by to mohlo bejt, pouzivam verzi 5, verzi 4 sem zalohoval a nepouzivam ji
+a verzi 3 jsem si nechal jako takouvou rezervu kdyby se vyskytlo neco podobnyho jako je
+popisouvani problem u hry "UFO" samozdejme to znamena mit v adresari "c:\utils" dva ruzne
+soubory napr. "backsav3.bat" a "backsav5.exe" pro obe verze, zkraceny nazev je pro to ze
+MS-Dos pouziva jako nazev souboru pouze 8 znaku, dlouhe nazvy souboru se obevili az pozdeji
+docela si stim clovek uzil kdysy dost "srandy", vymyslet k necemu nazev tak aby kdyz tomu pride
+treba za pul roku aby si vzpomel na co to je a kcemu to vlaste slouzi...
+at zijou dlouhy nazvy akorat ty UNICODE smajliky a kravinky bych tam mit nemusel, dneska
+
+22.4.2026
+
