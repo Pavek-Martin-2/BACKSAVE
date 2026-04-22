@@ -1,0 +1,72 @@
+
+toto je verze 5 pro Borland C++ 3.1, tuto verzi jsem konvertoval z predchozi verze 4 ktera
+byla napsana pro Qbasic 4.50 a celou ji prepsala AI, konkretne Microsoft Copilot, v teto verzi
+C-cka jsem nikdy nedelat takze tady jsem opravdu vyuzil AI na 100% a krome nekolika malo mejch
+drobnejch uprav je to cele jeji prace, co pribulo a vlastene to uz byla docela potreba uz ve verzi 4
+je to ze se jiz needituje zdrojovy soubor, kdyz se chce pridat/ubrat nebo upravit nejaka hra
+ale pro tento ucel od te slouzi textovy ASCII soubor "backsave.txt" (nazev muze byt i jiny,
+viz. zdrojak) tento soubor se tedy edituje neni tedy tim padem potreba vzdy znovu prekompilovavat
+binarku, tento soubor doporucuji zalohovat a mit jeho kopii pri pripad nejakeho problemu, aby
+se dal propadne obnovit ze zalohy, ve verzi 4 pro Qbasic byly v podstete dve promenne typu pole
+AH$ a SC$ v AH$(index) byl vzdy pracovni adresar kde je jednotliva hra a SC$(index) byl doplnek
+k AH$ paklize AH$(index) odpovidala adresari do ktereho bylo zrovna prepnuto tak z SC$(stejny index)
+se vzala maska, aby s vedelo jake soubry se k teto hre maji archivovat, ve verzi 5 je toto slouceno
+do jednoho radku a znak strednik ";" slouzi jako oddelovac dvou informaci, zde ukazka radku ze souboru
+"backsave.txt" - C:\HRY\BLOOD\;game????.sav - radek rika ze cesta hry je "c:\hry\blood" a soubory ktere
+me zajimaji jsou, jak maska napovida "game", pak nejake 4 znaky (jen 4) a pripona "sav", tedy napr. 
+"game0001.sav "game0002.sav" atd. 
+pak je "jinej" typ radku napr. radek - C:\HRY\DOOM2\;doomsav?.dsg *.bat *.sh - tento radek ma tri druhy
+souboru "doomsav" neco a pripona "dsg", dalsi je cokoli a pripona "bat" a posledni je cokoliv z priponou "sh"
+"sh" je pripona pro linux shell, cili zde byli nejake moje pokusy ze souborama "wad" to znamena z modifikacema
+puvodni hry, funguje spolehlive vsechno, vsechny radky akorat jediny s cim jsem si nevedel rady je hra UFO
+radek zde - C:\HRY\UFO\;GAME_1/*.* GAME_2/*.* GAME_3/*.* GAME_4/*.* GAME_5/*.* GAME_6/*.* GAME_7/*.* GAME_8/*.* GAME_9/*.* GAME_10/*.*
+takze vydite samy je to hruza, 10 save pozic, adresar GAME_1 az GAME_10 nahradni znaky jako treba GAME_?
+nebo GAME_?? nefungovali, muselo se to vsechny vypisovat jednotlive a to bylo zase tak dloudy a to "arj"
+uz nejak nevzalo, tady vopravdu nevim a dost me to potrapilo a je to vada na krase ktera mi fakt vadi
+kdyz je radek kratsi napr. takto - C:\HRY\UFO\;GAME_1\*.* GAME_2\*.* GAME_3\*.* GAME_4\*.*
+tak to jeste vezme, ale to je maximum pak uz je nejakej problem. tohle se me vyresit nepodarilo
+jo v souboru "backsave.txt" se da i zakomentovavat radky sami vidite UFO radek, kterej ma na zacatku "---"
+proste jenom nenalezena cesta ktera nebude odpovidat aktualnimu "PWD"
+jinak jeste trochu popisu jak probihal prevod do Borland C++ 3.1 verze, tedy program je v C# ne v C++
+to je potreba zduraznit, to znamena pripona soubou je *.C nikoliv *.cpp
+chtel jsem aby to bylo takhle, prislo me to jednodussi a funguje to taky a dobre
+verze 3 obcas zloby a pada verze 4 je dobra a tahle verze teda jen toho UFO opravdu drzi
+a hlavne uz zadny zbytecnosti okolo jako zjistovani PWD oklikou pres soubor a nebo jako ve verzi 3
+nejaky spousteni pres davkovej soubor interpretru gw-basic a s parametrem jako nazev "bas" souboru
+tady proste jeden "exe" a knemu seznam a tot vse, to se my libi, je to cisty
+jo zapomel jsem na ten AI prevod :) 
+tak trvalo to asi 2 hodiny a urcite to neslo primocare, napred jsem mu poslal zdrojak verze 4
+rekl jsem ze chci externi textovej soubor, na to me rek ze to je dobra cesta, coz si myslim taky
+pak jsem rekl ze uz nechci dve promeny typu pole ale ze bych to chtel nejak sloucit do jednoho, na to rek
+ze o nejni promblem, poslal kod, ten jsem zkopiroval do schranky udelal soubor "1.c", spustl napsalo to
+chybu, tak jsem mu zpetne rek ze je chyba a co to pise a na kerym radky, on to opravil a bylo to verze
+"2.c" no a takle asi do verze "10.c" postupne po kruckach, vzdycky neco udelal, ja sem rek ze neco chci
+trochu jinak on to upravil, trvalo to asi 2 hodiny nez jsem neco dali do hromady co fungovalo
+screenshoty jsem tentokrate ani nedelal protoze tech by museli bejt desitky a link taky nemam
+protoze jsem prekrocil nejakej limit neplaceny verze a dal uz se tam pak historie neuklada, takze
+pokud by byl link tak by tam toho byla si tak jenom tretina , coz by nemelo zase cenu
+kazdopadne teda velkej palec nahoru pro AI, dokonce kdyz ho clovek upozorni na chybu tak to opravy
+kdyz se mu ta chyba dobre popise, trochu se stydim ale tohle bych bez pomoci proste neudelal
+Ms-Dosovou verzi C-cka sem zahlidnul opravdu jenom z rychliku jak se rika
+a nebejt tam ta atraktivni funkce getcwd() tak bych se na to cely asi vykasla a vystacil bych z Qbasicem
+jeste takova zajimavost kdyz se mu rek command - system(arj.exe ... ) tak byl problem a kdyz se mu to
+reklo bez  "exe" jenom "arj" tak uz to vzal bez problemu a takovejhe zakysu tam bylo vic, napr. umiteni radku
+system("cls"); nesmi bejt na zacatku jako muze bejt dnes ale ve stary verzi C# musi bej az za vsema deklaracema
+a proste takovihle blbyn ktery by cloveka nenapadli a lamal sem si hlavu proc to nefunguje
+ne tohle by sem bez internetu proste nedal, asi bych mel jeste neco rict o adresari "scr\" je to takovej
+muj pokus a screenhoty z popisem aby to fungovalo jako takovej postupnej obrazkovej navod
+takze v DoSBox emulatoru (apod.) si vytvorte slozku "C:\prog" a do ni nakopirujte tak jak je to
+na "01.jpg" vsechny soubory a spuste "start.bat" to zajisti rozbaleni archivu "arj" a po rozbaleni
+taky spusteni prostredi Borland C++ 3.1 samozdrejme vsecho dnes na internetu jiz davno jako abandonware,
+takze bez problemu a pak je par ukazek jak stim pracovat, vetsinou ma obrazek uz sebe jeste popis
+coz me pride jako nejlepsi reseni, mluvit o necem primo "na miste" nevim co by mohlo bejt lepsiho
+adresar bejt "c:\prog\bc31" samozdrejme nemusi, muze to bejt kde chce ale dulezity je nastavit spravne cestu
+obr "04.jpg" jinak to proste nebude fungovat, von ty knihovny co potrebuje samozdrejme nenajde od toho to
+tam je takze prnivni po sputetni je jit do Options>Directories a pak je tam jeste dalsi dulezity a to je 
+Options>Save to ulozi tohle nastaveni, takze urcite nezapomenout !
+jinak mel jsem tady jeste verzi Borland C 2.0 ale tu uz jsem vymazal asi toho moc neumela
+pak jsem mel verzi 4.5 a ta uz byla pomejvic pro windows (este takovej ten co byl nadstavbou Dosu)
+takze t asla taky brzo pric, no a tahle 3.1 me pride takova rozumna, jako takova jeste pul na pul...
+
+21.4.2026 "autor"
+

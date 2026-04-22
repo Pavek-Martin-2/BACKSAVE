@@ -1,0 +1,112 @@
+C:\HRY\NFS\;GAMEDATA\
+C:\HRY\BRIX\;NONE
+C:\HRY\7DEN7NOC\;*.zal
+C:\HRY\ABUSE\;save*.spe
+C:\HRY\ALADDIN\;NONE
+C:\HRY\ALIENTRI\;tril.sg?
+C:\HRY\CLOVECE2\;save
+C:\HRY\BERUSKY\;NONE
+C:\HRY\BLOOD\;game????.sav
+C:\HRY\CASTLEM\;?
+C:\HRY\CASTLEM2\;?
+C:\HRY\CC\;savegame.??? conquer.ini
+C:\HRY\CHESS\;NONE
+C:\HRY\CHESSGEN\;NONE
+C:\HRY\CHESSPLA\;NONE
+C:\HRY\CIV\;civil?.sve replay.txt
+C:\HRY\DESCENT\;ja.* descent.cfg
+C:\HRY\DESCENT2\;ja.* descent.cfg
+C:\HRY\DOOM\;doomsav?.dsg *.bat
+C:\HRY\DOOM2\;doomsav?.dsg *.bat *.sh
+C:\HRY\DUKE2\;*.-s?
+C:\HRY\DUKE3D\;game?.sav
+C:\HRY\DUNE2\;_save???.dat
+C:\HRY\DUNE2S\;_save???.dat
+C:\HRY\GOBLINS2\;NONE
+C:\HRY\GOBLINS3\;NONE
+C:\HRY\HERETIC\;*.hsg
+C:\HRY\HEXEN\;hexen.cfg hexndata/
+C:\HRY\JAZZ\;save.?
+C:\HRY\JILL\;jn1save.* jn1savem.*
+C:\HRY\JS-WILLY\;NONE
+C:\HRY\KEEN4\;savegam?.ck4
+C:\HRY\KEEN5\;savegam?.ck5
+C:\HRY\KEEN6\;savegam?.ck6
+C:\HRY\KEEN7\;savegm?.kdr
+C:\HRY\KEEN8\;savegam?.ck6
+C:\HRY\LEMMCHS\;NONE
+C:\HRY\LEMMINGS\;NONE
+C:\HRY\LHX\;NONE
+C:\HRY\LODERUN\;NONE
+C:\HRY\M-CHESS\;NONE
+C:\HRY\MANIC\;NONE
+C:\HRY\MLICNAK\;teenage?.sav
+C:\HRY\MONKEY\;savegame.*
+C:\HRY\NAM\;game?.sav
+C:\HRY\LE_OSKAR\;*.sav kocky/*.*
+C:\HRY\PERESTR\;NONE
+C:\HRY\PREH2\;NONE
+C:\HRY\PRINCE\;prince.sav megahit.exe megahit.*
+C:\HRY\PRINCE2\;prince.sav
+C:\HRY\PRSI\;THE_BEST.TEN
+C:\HRY\PSION213\;NONE
+C:\HRY\PTOMB\;NONE
+C:\HRY\PUSHOVER\;NONE
+C:\HRY\QUAKE\;go.bat ID1/*.sav ID1/config.cfg EXE/*.*
+C:\HRY\RA\;savegame.*
+C:\HRY\RAPTOR\;NONE
+C:\HRY\RE\;NONE
+C:\HRY\REDNECK\;game?.sav
+C:\HRY\ROOT\;*.rot
+C:\HRY\SABOTEUR\;savgame?
+C:\HRY\SIM2000\;*.sc2
+C:\HRY\SIMCITY\;NONE
+C:\HRY\SOKOBAN\;../sokoban
+C:\HRY\TERMVELO\;NONE
+C:\HRY\THOSPITA\;SAVE/*.*
+C:\HRY\TOMBGOLD\;saveub.*
+C:\HRY\TOMBRAID\;savegame.*
+C:\HRY\TYCOON\;*.sv1
+C:\HRY\TYCOON2\;*.ss0
+---C:\HRY\UFO\;GAME_1/*.* GAME_2/*.* GAME_3/*.* GAME_4/*.* GAME_5/*.* GAME_6/*.* GAME_7/*.* GAME_8/*.* GAME_9/*.* GAME_10/*.*
+C:\HRY\UFO\;GAME_1\*.* GAME_2\*.* GAME_3\*.* GAME_4\*.*
+C:\HRY\VLAK\;NONE
+C:\HRY\WAR\;*.sav
+C:\HRY\WAR2\;*.sav
+C:\HRY\WOLF\;savegam?.*
+C:\HRY\XMASLEM\;NONE
+C:\HRY\BELOGEST\;*.hra
+C:\HRY\BLOCKOUT\;NONE
+C:\HRY\CAESAR2\;*.sav
+C:\HRY\GALZEME\;game?.sav
+C:\HRY\HEXX\;NONE
+C:\HRY\STINYNOC\;savegame.* *.cfg
+C:\HRY\WHAVEN\;*.bat *.txt *.ini svgn?.dat
+C:\HRY\ALBION\;SAVES/*.*
+C:\HRY\WINTER\;*.RP?
+C:\HRY\KEN\;savgame?.dat
+C:\HRY\LURE\;savegame.dta
+C:\HRY\ZORK1\;??? SAVE/*.* help.txt
+C:\HRY\ZORK2\;??? SAVE/*.* help.txt
+C:\HRY\ZORK3\;??? SAVE/*.* help.txt
+C:\HRY\MYSTIC\;towers.cfg towers.sg? *.png mys.bat
+C:\HRY\CHASM\;chasm??.sav *.pcx
+C:\HRY\DRACIHIS\;save??.sav savegame.map dh.bat navod.txt midi.cfg SAM-OLD/*.* MID/*.* NOMID/*.*
+C:\HRY\TOO\;too?.zal
+C:\HRY\DUNGEONM\;dmsave.*
+C:\HRY\DUNGEON2\;*.ini skull.cfg data/sksave?.* *.pcx
+C:\HRY\CC_DEMO\;SAVEGAME.??? conquer.ini
+C:\HRY\SUMMER\;*.RP?
+C:\HRY\BSTONE\;savegam?.bs1
+C:\HRY\ERADICAT\;erad??.sav erad.cfg dig.ini
+C:\HRY\SPEAR\;savegam?.sdm
+C:\HRY\VINYL\;config.dat data.dat
+C:\HRY\DESCENTS\;maca.* descent.cfg
+C:\HRY\HEXENSH\;hexen.cfg hexndata/
+C:\HRY\WHAVEN2\;*.txt *.ini svgn?.dat
+C:\HRY\VYPRAVA\;SAV?.DAT
+C:\HRY\DOOMJPTR\;doomsav?.dsg *.bat
+C:\HRY\HORKELET\;SAVE.? *.txt
+C:\HRY\GOBLINS3\;*.cfg *.inf
+C:\HRY\GOBLINS2\;*.inf
+C:\HRY\NITEMARE\;*.sav
