@@ -1,0 +1,1 @@
+PATH=C:;C:/dos;C:/pack;C:/dn;C:/utils;C:/prog/tp60;C:/prog/tp60/utils;C:\prog\sea;C:\PROG\QBASIC45;C:\PROG\GW323;C:\prog\lua535;C:\PROG\BC30\BIN;C:\PROG\BC31\BIN;C:\PROG\BC45WIN\BIN;C:\PROG\BC201;C:\WINDOWS;C:\ZALOHA\DLL;C:\PROG\mp3_play
