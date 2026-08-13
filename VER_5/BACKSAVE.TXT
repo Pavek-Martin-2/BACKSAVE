@@ -19,7 +19,7 @@ C:\HRY\DESCENT2\;ja.* descent.cfg
 C:\HRY\DOOM\;doomsav?.dsg *.bat
 C:\HRY\DOOM2\;doomsav?.dsg *.bat *.sh
 C:\HRY\DUKE2\;*.-s?
-C:\HRY\DUKE3D\;game?.sav
+C:\HRY\DUKE3D\;game?.sav *.cfg
 C:\HRY\DUNE2\;_save???.dat
 C:\HRY\DUNE2S\;_save???.dat
 C:\HRY\GOBLINS2\;NONE
@@ -40,7 +40,7 @@ C:\HRY\LHX\;NONE
 C:\HRY\LODERUN\;NONE
 C:\HRY\M-CHESS\;NONE
 C:\HRY\MANIC\;NONE
-C:\HRY\MLICNAK\;teenage?.sav
+C:\HRY\MLICNAK\;teenage?.sav *.set
 C:\HRY\MONKEY\;savegame.*
 C:\HRY\NAM\;game?.sav
 C:\HRY\LE_OSKAR\;*.sav kocky/*.*
@@ -56,7 +56,7 @@ C:\HRY\QUAKE\;go.bat ID1/*.sav ID1/config.cfg EXE/*.*
 C:\HRY\RA\;savegame.*
 C:\HRY\RAPTOR\;NONE
 C:\HRY\RE\;NONE
-C:\HRY\REDNECK\;game?.sav
+C:\HRY\REDNECK\;game?.sav *.cfg *.pcx
 C:\HRY\ROOT\;*.rot
 C:\HRY\SABOTEUR\;savgame?
 C:\HRY\SIM2000\;*.sc2
@@ -90,7 +90,7 @@ C:\HRY\ZORK1\;??? SAVE/*.* help.txt
 C:\HRY\ZORK2\;??? SAVE/*.* help.txt
 C:\HRY\ZORK3\;??? SAVE/*.* help.txt
 C:\HRY\MYSTIC\;towers.cfg towers.sg? *.png mys.bat
-C:\HRY\CHASM\;chasm??.sav *.pcx
+C:\HRY\CHASM\;chasm??.sav *.pcx *.cfg
 C:\HRY\DRACIHIS\;save??.sav savegame.map dh.bat navod.txt midi.cfg SAM-OLD/*.* MID/*.* NOMID/*.*
 C:\HRY\TOO\;too?.zal
 C:\HRY\DUNGEONM\;dmsave.*
@@ -106,7 +106,8 @@ C:\HRY\HEXENSH\;hexen.cfg hexndata/
 C:\HRY\WHAVEN2\;*.txt *.ini svgn?.dat
 C:\HRY\VYPRAVA\;SAV?.DAT
 C:\HRY\DOOMJPTR\;doomsav?.dsg *.bat
-C:\HRY\HORKELET\;SAVE.? *.txt
+C:\HRY\HORKELET\;SAVE.? *.txt *.cfg
 C:\HRY\GOBLINS3\;*.cfg *.inf
 C:\HRY\GOBLINS2\;*.inf
 C:\HRY\NITEMARE\;*.sav
+C:\HRY\GALACTIX\;setup hscores
