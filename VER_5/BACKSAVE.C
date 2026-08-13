@@ -71,7 +71,7 @@ int main(int argc, char *argv[]) {
 
     sprintf(seznam_cesta, "%sbacksave.txt", exe_path);
 
-    printf("\n\nbacksave.exe ver.5 - Borland C++ 3.1\n");
+    printf("\n\nbacksave ver.5 - Borland C++ 3.1\n");
 
     /* NACIST SEZNAM */
     f = fopen(seznam_cesta, "r");
