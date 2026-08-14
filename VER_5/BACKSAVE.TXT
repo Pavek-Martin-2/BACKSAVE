@@ -1,3 +1,6 @@
+C:\HRY\NAM\; *.sav *.ini *.cfg nam0???? *.pcx
+C:\HRY\SW; *.sav *.ini *.cfg *.pcx
+C:\HRY\FRONTIER\; *._?? save/
 C:\HRY\NFS\;GAMEDATA\
 C:\HRY\BRIX\;NONE
 C:\HRY\7DEN7NOC\;*.zal
@@ -42,7 +45,6 @@ C:\HRY\M-CHESS\;NONE
 C:\HRY\MANIC\;NONE
 C:\HRY\MLICNAK\;teenage?.sav *.set
 C:\HRY\MONKEY\;savegame.*
-C:\HRY\NAM\;game?.sav
 C:\HRY\LE_OSKAR\;*.sav kocky/*.*
 C:\HRY\PERESTR\;NONE
 C:\HRY\PREH2\;NONE
@@ -56,7 +58,7 @@ C:\HRY\QUAKE\;go.bat ID1/*.sav ID1/config.cfg EXE/*.*
 C:\HRY\RA\;savegame.*
 C:\HRY\RAPTOR\;NONE
 C:\HRY\RE\;NONE
-C:\HRY\REDNECK\;game?.sav *.cfg *.pcx
+C:\HRY\REDNECK\;game?.sav *.cfg *.pcx *.jpg
 C:\HRY\ROOT\;*.rot
 C:\HRY\SABOTEUR\;savgame?
 C:\HRY\SIM2000\;*.sc2
