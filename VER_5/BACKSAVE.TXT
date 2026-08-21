@@ -1,15 +1,21 @@
+C:\HRY\CAT\; cat.exe
+C:\HRY\ARKANOID\; *.scr
+C:\HRY\BCHESS\; *.sav *.txt
+C:\HRY\RIDES\; *.sav *.cfg *.ini *.pcx
+C:\HRY\TIM2\; *.sav *.cfg
+C:\HRY\TIM\; *.cfg
 C:\HRY\NAM\; *.sav *.ini *.cfg nam0???? *.pcx
 C:\HRY\SW; *.sav *.ini *.cfg *.pcx
 C:\HRY\FRONTIER\; *._?? save/
 C:\HRY\NFS\;GAMEDATA\
 C:\HRY\BRIX\;NONE
 C:\HRY\7DEN7NOC\;*.zal
-C:\HRY\ABUSE\;save*.spe
+C:\HRY\ABUSE\;save*.spe *.cfg *.ini *.tbl
 C:\HRY\ALADDIN\;NONE
 C:\HRY\ALIENTRI\;tril.sg?
 C:\HRY\CLOVECE2\;save
 C:\HRY\BERUSKY\;NONE
-C:\HRY\BLOOD\;game????.sav
+C:\HRY\BLOOD\;game????.sav *.cfg
 C:\HRY\CASTLEM\;?
 C:\HRY\CASTLEM2\;?
 C:\HRY\CC\;savegame.??? conquer.ini
@@ -58,7 +64,7 @@ C:\HRY\QUAKE\;go.bat ID1/*.sav ID1/config.cfg EXE/*.*
 C:\HRY\RA\;savegame.*
 C:\HRY\RAPTOR\;NONE
 C:\HRY\RE\;NONE
-C:\HRY\REDNECK\;game?.sav *.cfg *.pcx *.jpg
+C:\HRY\REDNECK\;game?.sav *.cfg *.jpg
 C:\HRY\ROOT\;*.rot
 C:\HRY\SABOTEUR\;savgame?
 C:\HRY\SIM2000\;*.sc2
@@ -72,7 +78,7 @@ C:\HRY\TYCOON\;*.sv1
 C:\HRY\TYCOON2\;*.ss0
 ---C:\HRY\UFO\;GAME_1/*.* GAME_2/*.* GAME_3/*.* GAME_4/*.* GAME_5/*.* GAME_6/*.* GAME_7/*.* GAME_8/*.* GAME_9/*.* GAME_10/*.*
 C:\HRY\UFO\;GAME_1\*.* GAME_2\*.* GAME_3\*.* GAME_4\*.*
-C:\HRY\VLAK\;NONE
+C:\HRY\VLAK\; start.bat
 C:\HRY\WAR\;*.sav
 C:\HRY\WAR2\;*.sav
 C:\HRY\WOLF\;savegam?.*

@@ -29,7 +29,7 @@ void normalize(char *s) {
 
 int main(int argc, char *argv[]) {
 
-    struct XX xx[200]; // tady asi casem menit 200(pridavat)
+    struct XX xx[200]; // tady asi casem menit 200 (pridavat)
     int pocet = 0;
 
     char pwd[128];
@@ -46,7 +46,7 @@ int main(int argc, char *argv[]) {
     struct time t;
 
     char archiv[256];
-    char cmd_fast[] = "config -set cpu cycles=20000";
+    char cmd_fast[] = "config -set cpu cycles=30000";
     char cmd_slow[] = "config -set cpu cycles=auto";
     char cmd_arj[512];
     char cmd_test[512];
@@ -76,12 +76,12 @@ int main(int argc, char *argv[]) {
     /* NACIST SEZNAM */
     f = fopen(seznam_cesta, "r");
     if (!f) {
-      //printf("\n\nbacksave.exe ver.5 - Borland C++ 3.1\n");
+      //printf("\n\nbacksave.exe verze 5 - Borland C++ 3.1\n");
         printf("\nChyba: nelze otevrit %s\n", seznam_cesta);
         return 0;
     }
 
-    while (!feof(f) && pocet < 200) { // a tady taky casem menit 200(pridavat)
+    while (!feof(f) && pocet < 200) { // a tady taky casem menit 200 (pridavat)
         if (fgets(line, sizeof(line), f)) {
             strednik = strchr(line, ';');
             if (strednik) {
